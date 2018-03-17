@@ -8,20 +8,25 @@ namespace NetStatus
     {
         public NoNetworkPage()
         {
-            /*Content = new StackLayout
+            BackgroundColor = Color.FromRgb(0xf0, 0xf0, 0xf0);
+
+            Content = new StackLayout
             {
                 Children = {
-                    new Label { Text = "Hello ContentPage" }
+                    new Label() { 
+                        Text = "No Network Connection Available",
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                TextColor = Color.FromRgb(0x40,0x40,0x40),}
                 }
-            };*/
-            BackgroundColor = Color.FromRgb(0xf0, 0xf0, 0xf0);
-            Content = new Label()
+            };
+            /*Content = new Label()
             {
                 Text = "No Network Connection Available",
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 TextColor = Color.FromRgb(0x40,0x40,0x40),
-            };
+            };*/
         }
     }
 }
